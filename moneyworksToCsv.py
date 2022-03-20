@@ -44,6 +44,10 @@ for cell in column_b_list:
         residentDetails =[]
         count=0
 
+#clean the new sheet of all the columns that are not used
+sheet.delete_cols(1,5)
+sheet.delete_cols(16,50)
+
 
     # if ("None" in str(cell.value)):
     #     count += 1
